@@ -1,0 +1,43 @@
+compilatore: /tools/Xilinx/Vivado/2023.1/gnu/microblaze/lin/bin/mb-gcc
+
+mb-gcc -o test.o -c main.c
+
+mb-obj -dS test.o > test.txt
+
+mb-gcc -S main.c 
+
+solo per il .text 
+objcopy -j .text -O binary -I elf32-little prova.o prova.text 
+
+mb-gcc -o prova/prova.o -c prova/main.s && objcopy -j .text -O binary -I elf32-little prova/prova.o prova.text
+
+little endian: ovvero il bit piu significante va in fondo e a[0] ha il meno significante ovvero 1 o 0
+
+xxd -b prova/main.text
+
+mb-gcc -o add.o -c add.s && objcopy -j .text -O binary -I elf32-little add.o add.text && mb-obj -dS add.o > add.txt
+
+Notare: Se si shifta a sinistra non c'è differenza, a destra il c fa uno shift aritmetico con i signed e logico con gli unisgned
+
+
+
+u50 alveo
+vitis analyzer
+
+prima source setting su vitisi
+
+
+
+vitis_hls 
+
+
+REG, DATA
+
+
+g++ -g -std=c++17 -Wall -O0 ../src/host.cpp ../src/xcl2.cpp -o ./app.exe -I$XILINX_XRT/include/ -L$XILINX_XRT/lib -lxrt_coreutil -pthread -lOpenCL
+
+
+
+https://support.xilinx.com/s/question/0D52E00006mD5iLSAS/xrt-error-failed-to-load-xclbin-invalid-argument?language=en_US
+
+https://support.xilinx.com/s/question/0D52E00007FRTGCSA5/u200-unable-to-load-xclbin-from-vadd-example?language=en_US

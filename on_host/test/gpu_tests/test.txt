@@ -1,0 +1,52 @@
+
+test.o:     file format elf32-microblaze
+
+
+Disassembly of section .text:
+
+00000000 <main>:
+   0:	3021ffe0 	addik	r1, r1, -32
+   4:	fa61001c 	swi	r19, r1, 28
+   8:	12610000 	addk	r19, r1, r0
+   c:	30600001 	addik	r3, r0, 1
+  10:	f8730008 	swi	r3, r19, 8
+  14:	30600002 	addik	r3, r0, 2
+  18:	f873000c 	swi	r3, r19, 12
+  1c:	30600003 	addik	r3, r0, 3
+  20:	f8730010 	swi	r3, r19, 16
+  24:	30600004 	addik	r3, r0, 4
+  28:	f8730014 	swi	r3, r19, 20
+  2c:	30600005 	addik	r3, r0, 5
+  30:	f8730018 	swi	r3, r19, 24
+  34:	30600001 	addik	r3, r0, 1
+  38:	f8730004 	swi	r3, r19, 4
+  3c:	b800004c 	bri	76		// 88
+  40:	e8730004 	lwi	r3, r19, 4
+  44:	10631800 	addk	r3, r3, r3
+  48:	10631800 	addk	r3, r3, r3
+  4c:	30930004 	addik	r4, r19, 4
+  50:	10641800 	addk	r3, r4, r3
+  54:	30630004 	addik	r3, r3, 4
+  58:	e8630000 	lwi	r3, r3, 0
+  5c:	30830001 	addik	r4, r3, 1
+  60:	e8730004 	lwi	r3, r19, 4
+  64:	10631800 	addk	r3, r3, r3
+  68:	10631800 	addk	r3, r3, r3
+  6c:	30b30004 	addik	r5, r19, 4
+  70:	10651800 	addk	r3, r5, r3
+  74:	30630004 	addik	r3, r3, 4
+  78:	f8830000 	swi	r4, r3, 0
+  7c:	e8730004 	lwi	r3, r19, 4
+  80:	30630001 	addik	r3, r3, 1
+  84:	f8730004 	swi	r3, r19, 4
+  88:	e8930004 	lwi	r4, r19, 4
+  8c:	30600004 	addik	r3, r0, 4
+  90:	16441801 	cmp	r18, r4, r3
+  94:	bcb2ffac 	bgei	r18, -84		// 40
+  98:	80000000 	or	r0, r0, r0
+  9c:	80000000 	or	r0, r0, r0
+  a0:	10330000 	addk	r1, r19, r0
+  a4:	ea61001c 	lwi	r19, r1, 28
+  a8:	30210020 	addik	r1, r1, 32
+  ac:	b60f0008 	rtsd	r15, 8
+  b0:	80000000 	or	r0, r0, r0
