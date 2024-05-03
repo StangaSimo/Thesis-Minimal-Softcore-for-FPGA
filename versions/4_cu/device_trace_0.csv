@@ -1,0 +1,185 @@
+HEADER
+VTF File Version,1.1
+VTF File Type,1
+PID,37958
+Generated on,2023-11-14 11:29:09
+Resolution,ms
+Min Resolution,ns
+Trace Version,1.1
+TraceID,37959
+XRT  Version,2.15.225
+Tool Version,2023.1
+Platform,xilinx_u50_gen3x16_xdma_base_5
+Target,System Run
+
+STRUCTURE
+Group_Start,xilinx_u50_gen3x16_xdma_base_5
+Group_Start,vadd.xclbin
+Group_Start,Compute Unit vadd_1,Activity in accelerator vadd:vadd_1
+Dynamic_Row_Summary,1,Executions,Execution in accelerator vadd_1
+Group_Start,m_axi_gmem-HBM[0](mem|reg|out),Data Transfers between vadd_1 and Global Memory over read and write channels of vadd_1/m_axi_gmem-HBM[0]
+Static_Row,2,Read Channel,Read Data Transfers 
+Static_Row,3,Write Channel,Write Data Transfers 
+Group_End,m_axi_gmem-HBM[0](mem|reg|out)
+Group_End,vadd_1
+Group_Start,Compute Unit vadd_2,Activity in accelerator vadd:vadd_2
+Dynamic_Row_Summary,4,Executions,Execution in accelerator vadd_2
+Group_Start,m_axi_gmem-HBM[0](mem|reg|out),Data Transfers between vadd_2 and Global Memory over read and write channels of vadd_2/m_axi_gmem-HBM[0]
+Static_Row,5,Read Channel,Read Data Transfers 
+Static_Row,6,Write Channel,Write Data Transfers 
+Group_End,m_axi_gmem-HBM[0](mem|reg|out)
+Group_End,vadd_2
+Group_Start,Compute Unit vadd_3,Activity in accelerator vadd:vadd_3
+Dynamic_Row_Summary,7,Executions,Execution in accelerator vadd_3
+Group_Start,m_axi_gmem-HBM[0](mem|reg|out),Data Transfers between vadd_3 and Global Memory over read and write channels of vadd_3/m_axi_gmem-HBM[0]
+Static_Row,8,Read Channel,Read Data Transfers 
+Static_Row,9,Write Channel,Write Data Transfers 
+Group_End,m_axi_gmem-HBM[0](mem|reg|out)
+Group_End,vadd_3
+Group_Start,Compute Unit vadd_4,Activity in accelerator vadd:vadd_4
+Dynamic_Row_Summary,10,Executions,Execution in accelerator vadd_4
+Group_Start,m_axi_gmem-HBM[0](mem|reg|out),Data Transfers between vadd_4 and Global Memory over read and write channels of vadd_4/m_axi_gmem-HBM[0]
+Static_Row,11,Read Channel,Read Data Transfers 
+Static_Row,12,Write Channel,Write Data Transfers 
+Group_End,m_axi_gmem-HBM[0](mem|reg|out)
+Group_End,vadd_4
+Group_End,vadd.xclbin
+Group_End,xilinx_u50_gen3x16_xdma_base_5
+
+MAPPING
+37,0:0:0
+39,0:32:7
+41,0:4:4294967295
+35,38654705664:4228:94208908168448
+32,HBM[0]
+38,READ
+14,WRITE
+23,clCreateBuffer
+8,clCreateCommandQueue
+6,clCreateContext
+17,clCreateKernel
+10,clCreateProgramWithBinary
+27,clEnqueueMigrateMemObjects
+29,clEnqueueTask
+40,clFinish
+4,clGetDeviceIDs
+9,clGetDeviceInfo
+1,clGetExtensionFunctionAddress
+2,clGetExtensionFunctionAddressForPlatform
+3,clGetPlatformInfo
+42,clReleaseCommandQueue
+31,clReleaseContext
+16,clReleaseDevice
+30,clReleaseKernel
+28,clReleaseMemObject
+20,clReleaseProgram
+21,clRetainContext
+5,clRetainDevice
+22,clRetainKernel
+26,clRetainMemObject
+25,clSetKernelArg
+34,vadd
+44,vadd_1
+45,vadd_2
+46,vadd_3
+47,vadd_4
+33,xilinx_u50_gen3x16_xdma_base_5
+15,xrt::bo::address
+12,xrt::bo::bo
+24,xrt::bo::map
+13,xrt::bo::sync
+7,xrt::device::device
+11,xrt::device::load_xclbin
+43,xrt::device::reset
+18,xrt::kernel::kernel
+19,xrt::run::run
+36,xrt::run::start
+
+EVENTS
+633,0,507.015244,1,KERNEL,34,44
+634,0,507.015456,2,KERNEL_READ,32
+635,634,507.015463,2,KERNEL_READ,32
+636,0,507.015823,2,KERNEL_READ,32
+637,636,507.015825,2,KERNEL_READ,32
+638,0,507.015852,2,KERNEL_READ,32
+639,638,507.015920,2,KERNEL_READ,32
+640,0,507.015931,2,KERNEL_READ,32
+641,640,507.015999,2,KERNEL_READ,32
+642,0,507.016003,2,KERNEL_READ,32
+643,642,507.016068,2,KERNEL_READ,32
+644,0,507.016071,2,KERNEL_READ,32
+645,644,507.016129,2,KERNEL_READ,32
+646,0,507.016136,2,KERNEL_READ,32
+647,646,507.016140,2,KERNEL_READ,32
+648,0,507.019798,2,KERNEL_READ,32
+649,648,507.019802,2,KERNEL_READ,32
+650,0,507.020456,3,KERNEL_WRITE,32
+651,650,507.020458,3,KERNEL_WRITE,32
+652,633,507.022140,1,KERNEL,34,44
+653,0,507.516773,4,KERNEL,34,45
+654,0,507.516985,5,KERNEL_READ,32
+655,654,507.516989,5,KERNEL_READ,32
+656,0,507.517348,5,KERNEL_READ,32
+657,656,507.517350,5,KERNEL_READ,32
+658,0,507.517359,5,KERNEL_READ,32
+659,658,507.517361,5,KERNEL_READ,32
+660,0,507.517381,5,KERNEL_READ,32
+661,660,507.517445,5,KERNEL_READ,32
+662,0,507.517460,5,KERNEL_READ,32
+663,662,507.517525,5,KERNEL_READ,32
+664,0,507.517528,5,KERNEL_READ,32
+665,664,507.517597,5,KERNEL_READ,32
+666,0,507.517600,5,KERNEL_READ,32
+667,666,507.517658,5,KERNEL_READ,32
+668,0,507.517661,5,KERNEL_READ,32
+669,668,507.517665,5,KERNEL_READ,32
+670,0,507.521327,5,KERNEL_READ,32
+671,670,507.521330,5,KERNEL_READ,32
+672,0,507.521812,6,KERNEL_WRITE,32
+673,672,507.521814,6,KERNEL_WRITE,32
+674,653,507.523672,4,KERNEL,34,45
+675,0,507.906107,7,KERNEL,34,46
+676,0,507.906320,8,KERNEL_READ,32
+677,676,507.906323,8,KERNEL_READ,32
+678,0,507.906683,8,KERNEL_READ,32
+679,678,507.906685,8,KERNEL_READ,32
+680,0,507.906694,8,KERNEL_READ,32
+681,680,507.906695,8,KERNEL_READ,32
+682,0,507.906715,8,KERNEL_READ,32
+683,682,507.906780,8,KERNEL_READ,32
+684,0,507.906794,8,KERNEL_READ,32
+685,684,507.906859,8,KERNEL_READ,32
+686,0,507.906863,8,KERNEL_READ,32
+687,686,507.906931,8,KERNEL_READ,32
+688,0,507.906935,8,KERNEL_READ,32
+689,688,507.906992,8,KERNEL_READ,32
+690,0,507.906996,8,KERNEL_READ,32
+691,690,507.906999,8,KERNEL_READ,32
+692,0,507.910661,8,KERNEL_READ,32
+693,692,507.910665,8,KERNEL_READ,32
+694,0,507.911262,9,KERNEL_WRITE,32
+695,694,507.911264,9,KERNEL_WRITE,32
+696,675,507.913007,7,KERNEL,34,46
+697,0,508.142197,10,KERNEL,34,47
+698,0,508.142410,11,KERNEL_READ,32
+699,698,508.142413,11,KERNEL_READ,32
+700,0,508.142773,11,KERNEL_READ,32
+701,700,508.142775,11,KERNEL_READ,32
+702,0,508.142805,11,KERNEL_READ,32
+703,702,508.142870,11,KERNEL_READ,32
+704,0,508.142884,11,KERNEL_READ,32
+705,704,508.142949,11,KERNEL_READ,32
+706,0,508.142953,11,KERNEL_READ,32
+707,706,508.143017,11,KERNEL_READ,32
+708,0,508.143025,11,KERNEL_READ,32
+709,708,508.143082,11,KERNEL_READ,32
+710,0,508.143086,11,KERNEL_READ,32
+711,710,508.143089,11,KERNEL_READ,32
+712,0,508.146751,11,KERNEL_READ,32
+713,712,508.146755,11,KERNEL_READ,32
+714,0,508.150374,12,KERNEL_WRITE,32
+715,714,508.150375,12,KERNEL_WRITE,32
+716,697,508.152165,10,KERNEL,34,47
+
+DEPENDENCIES
+
