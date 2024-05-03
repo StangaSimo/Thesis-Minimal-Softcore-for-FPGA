@@ -1,0 +1,10 @@
+17:36:51 INFO  : updated workspace path: 
+17:36:51 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt
+17:36:51 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st  /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt
+17:36:52 INFO  : Successfully created repository data at /tmp/rigel_lopper_stanganini2406023638525974862
+17:36:52 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_stanganini2406023638525974862 -r /tmp/rigel_lopper_stanganini2406023638525974862/.repo.yaml
+17:36:52 INFO  : Successfully created repository data at /tmp/rigel_lopper_stanganini10832869329854341199
+17:36:52 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_stanganini11710285000900471618 -r /tmp/rigel_lopper_stanganini10832869329854341199/.repo.yaml
+17:36:52 INFO  : Embedded Template List generated successfully
+17:36:52 INFO  : Embedded Template List generated successfully
+17:36:52 INFO  : updated workspace path: 

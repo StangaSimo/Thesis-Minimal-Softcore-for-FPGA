@@ -1,0 +1,95 @@
+HEADER
+VTF File Version,1.1
+VTF File Type,1
+PID,33081
+Generated on,2023-11-14 11:01:09
+Resolution,ms
+Min Resolution,ns
+Trace Version,1.1
+TraceID,33082
+XRT  Version,2.15.225
+Tool Version,2023.1
+Platform,xilinx_u50_gen3x16_xdma_base_5
+Target,System Run
+
+STRUCTURE
+Group_Start,xilinx_u50_gen3x16_xdma_base_5
+Group_Start,vadd.xclbin
+Group_Start,Compute Unit vadd_1,Activity in accelerator vadd:vadd_1
+Dynamic_Row_Summary,1,Executions,Execution in accelerator vadd_1
+Group_Start,m_axi_gmem-HBM[0](mem|reg|out),Data Transfers between vadd_1 and Global Memory over read and write channels of vadd_1/m_axi_gmem-HBM[0]
+Static_Row,2,Read Channel,Read Data Transfers 
+Static_Row,3,Write Channel,Write Data Transfers 
+Group_End,m_axi_gmem-HBM[0](mem|reg|out)
+Group_End,vadd_1
+Group_End,vadd.xclbin
+Group_End,xilinx_u50_gen3x16_xdma_base_5
+
+MAPPING
+34,0:0:0
+32,140726288513296:139987301616878:0
+29,HBM[0]
+35,READ
+14,WRITE
+21,clCreateBuffer
+8,clCreateCommandQueue
+6,clCreateContext
+17,clCreateKernel
+10,clCreateProgramWithBinary
+25,clEnqueueMigrateMemObjects
+27,clEnqueueTask
+28,clFinish
+4,clGetDeviceIDs
+9,clGetDeviceInfo
+1,clGetExtensionFunctionAddress
+2,clGetExtensionFunctionAddressForPlatform
+3,clGetPlatformInfo
+38,clReleaseCommandQueue
+37,clReleaseContext
+16,clReleaseDevice
+36,clReleaseKernel
+26,clReleaseMemObject
+20,clReleaseProgram
+5,clRetainDevice
+24,clRetainMemObject
+23,clSetKernelArg
+31,vadd
+40,vadd_1
+30,xilinx_u50_gen3x16_xdma_base_5
+15,xrt::bo::address
+12,xrt::bo::bo
+22,xrt::bo::map
+13,xrt::bo::sync
+7,xrt::device::device
+11,xrt::device::load_xclbin
+39,xrt::device::reset
+18,xrt::kernel::kernel
+19,xrt::run::run
+33,xrt::run::start
+
+EVENTS
+211,0,403.625527,1,KERNEL,31,40
+212,0,403.625737,2,KERNEL_READ,29
+213,212,403.625740,2,KERNEL_READ,29
+214,0,403.626070,2,KERNEL_READ,29
+215,214,403.626072,2,KERNEL_READ,29
+216,0,403.626077,2,KERNEL_READ,29
+217,216,403.626078,2,KERNEL_READ,29
+218,0,403.626103,2,KERNEL_READ,29
+219,218,403.626170,2,KERNEL_READ,29
+220,0,403.626183,2,KERNEL_READ,29
+221,220,403.626250,2,KERNEL_READ,29
+222,0,403.626253,2,KERNEL_READ,29
+223,222,403.626320,2,KERNEL_READ,29
+224,0,403.626323,2,KERNEL_READ,29
+225,224,403.626383,2,KERNEL_READ,29
+226,0,403.626387,2,KERNEL_READ,29
+227,226,403.626390,2,KERNEL_READ,29
+228,0,403.629760,2,KERNEL_READ,29
+229,228,403.629763,2,KERNEL_READ,29
+230,0,403.633103,3,KERNEL_WRITE,29
+231,230,403.633105,3,KERNEL_WRITE,29
+232,211,403.633327,1,KERNEL,31,40
+
+DEPENDENCIES
+

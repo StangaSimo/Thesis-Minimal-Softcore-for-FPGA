@@ -7,6 +7,6 @@ The main goal of this thesis was the development of a simple interpreter capable
 The entire documentation of the entire project is located in the PDF thesis/thesis.pdf written in Italian
 
 ## Project Structure 
-* **src**: 
-* **Thesis** : 
-* **a** :
+* **on_host** : all the code that helped develp the host version of the MicroBlaze Interpreter.
+* **thesis** : the latex code and the pdf of the full thesis.
+* **versions** : all the configuration of the interpreter for the FPGA.
