@@ -1,0 +1,77 @@
+HEADER
+VTF File Version,1.1
+VTF File Type,1
+PID,78331
+Generated on,2023-11-14 18:00:50
+Resolution,ms
+Min Resolution,ns
+Trace Version,1.1
+TraceID,78333
+XRT  Version,2.15.225
+Tool Version,2023.1
+Platform,
+Target,System Run
+
+STRUCTURE
+Group_Start,
+Group_End,
+
+MAPPING
+37,0:0:0
+40,0:136:94199027705696
+41,0:32:7
+35,0:4228:7
+43,4294967296:94199027638944:0
+39,73014444032:136:94199027705600
+30,HBM[0]
+38,READ
+14,WRITE
+23,clCreateBuffer
+8,clCreateCommandQueue
+6,clCreateContext
+17,clCreateKernel
+10,clCreateProgramWithBinary
+27,clEnqueueMigrateMemObjects
+29,clEnqueueTask
+42,clFinish
+4,clGetDeviceIDs
+9,clGetDeviceInfo
+1,clGetExtensionFunctionAddress
+2,clGetExtensionFunctionAddressForPlatform
+3,clGetPlatformInfo
+44,clReleaseCommandQueue
+32,clReleaseContext
+16,clReleaseDevice
+31,clReleaseKernel
+28,clReleaseMemObject
+20,clReleaseProgram
+21,clRetainContext
+5,clRetainDevice
+22,clRetainKernel
+26,clRetainMemObject
+25,clSetKernelArg
+34,vadd
+46,vadd_1
+47,vadd_2
+48,vadd_3
+49,vadd_4
+50,vadd_5
+51,vadd_6
+52,vadd_7
+53,vadd_8
+33,xilinx_u50_gen3x16_xdma_base_5
+15,xrt::bo::address
+12,xrt::bo::bo
+24,xrt::bo::map
+13,xrt::bo::sync
+7,xrt::device::device
+11,xrt::device::load_xclbin
+45,xrt::device::reset
+18,xrt::kernel::kernel
+19,xrt::run::run
+36,xrt::run::start
+
+EVENTS
+
+DEPENDENCIES
+
